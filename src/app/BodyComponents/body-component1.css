@@ -1,0 +1,22 @@
+.nav-pills .nav-link {
+    border-radius: 25px;
+}
+.nav-pills .nav-link:hover {
+    background-color: rgb(212, 210, 204);
+}
+.nav-pills .nav-link:active {
+    background-color: rgb(170, 169, 167);
+}
+.nav-pills .nav-link.active {
+    background-color: rgb(241, 241, 241);
+}
+.nav-pills a{
+    font-weight:bolder;
+    color: rgb(153, 133, 133);
+    font-size: 16px;
+}
+
+.nav-pills .nav-link-active a{
+    color:blue;
+    font-size: 16px;
+}
