@@ -27,4 +27,7 @@ import { TopNavBarComponent3 } from './header/top-nav-bar3.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  numberKarma1:number = 2
+}
+

@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
     styleUrls: ['./body-component3.css']
 })
 export class BodyComponent3 {
-
+    numberTrophies:number = 1
 }

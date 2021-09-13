@@ -6,5 +6,7 @@ import { Component } from "@angular/core";
     styleUrls: ['./body-component2.css']
 })
 export class BodyComponent2 {
-
+    username:string = "Dreyintor55"
+    numberKarma:number = 1
+    cakeDay:string = "January 24, 2021"
 }
