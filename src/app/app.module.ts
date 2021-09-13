@@ -8,18 +8,20 @@ import { BodyComponent3 } from './BodyComponents/body-component3';
 import { BodyComponent4 } from './BodyComponents/body-component4';
 import { TopNavBarComponent } from './header/top-nav-bar.component';
 import { TopNavBarComponent2 } from './header/top-nav-bar2.component';
-import { TopNavBarComponent3 } from './header/top-nav-bar3.component';
+import { LayoutHeadersComponent } from './layout/layout-headers.component';
+import { LayoutMainComponent } from './layout/layout-main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavBarComponent,
     TopNavBarComponent2,
-    TopNavBarComponent3,
     BodyComponent1,
     BodyComponent2,
     BodyComponent3,
-    BodyComponent4
+    BodyComponent4,
+    LayoutMainComponent,
+    LayoutHeadersComponent
   ],
   imports: [
     BrowserModule
@@ -28,6 +30,6 @@ import { TopNavBarComponent3 } from './header/top-nav-bar3.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-  numberKarma1:number = 2
+
 }
 

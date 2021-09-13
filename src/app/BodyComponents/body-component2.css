@@ -22,7 +22,7 @@
 }
 
 .bluebackground{
-    background-color: rgb(55, 192, 247);
+    background-color: #33a8ff;
 }
 
 .avatarbutton{
@@ -41,7 +41,7 @@
 }
 
 .nav-pills1 .nav-link {
-    background-color:rgb(50, 121, 187);
+    background-color:#0079d3;
     color:whitesmoke;
     border-radius: 25px;
     font-weight: 500;
@@ -54,6 +54,7 @@
     padding:0;
     font-size: 14px;
     color: rgb(51, 49, 49);
+    font-weight: 500;
 }
 
 .nav-pills2 .nav-link {
