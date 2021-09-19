@@ -1,0 +1,14 @@
+.nav-tabs .nav-link:hover{
+    color:blue;
+}
+.nav-tabs .nav-link:active{
+    color: blue;
+}
+.nav-tabs .nav-link{
+    color:black;
+}
+
+.nav-tabs .nav-link:active{
+    border-bottom: blue;
+
+}
