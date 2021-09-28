@@ -20,6 +20,7 @@ import { UpvotedComponent } from './pages/upvoted/upvoted.component';
 import { DownvotedComponent } from './pages/downvoted/downvoted.component';
 import { AwardsreceivedComponent } from './pages/awardsreceived/awardsreceived.component';
 import { AwardsgivenComponent } from './pages/awardsgiven/awardsgiven.component';
+import { PostComponent } from './BodyComponents/post-component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { AwardsgivenComponent } from './pages/awardsgiven/awardsgiven.component'
     DownvotedComponent,
     AwardsreceivedComponent,
     AwardsgivenComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

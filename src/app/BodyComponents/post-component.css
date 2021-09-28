@@ -1,0 +1,18 @@
+.card-title{
+    font-size: large;
+    color: #3d3d3d;
+  
+}
+
+.subreddittext{
+    font-size: small;
+}
+
+.nav-link{
+    color: #888b8d;
+    display: inline-flex;
+}
+
+.nav-link:hover {
+    background-color: #d9e0e6;
+}

@@ -5,6 +5,18 @@
 
     <div class="align-top" style="width:35%; display:inline-block;">
         <app-body-component1>Loading</app-body-component1>
+        <div *ngFor ="let posts of posts1">
+            <app-post-component 
+                title = {{posts.title}} 
+                imgPath = {{posts.imgPath}}
+                subreddit = {{posts.subreddit}}
+                poster = {{posts.poster}}
+                votes = {{posts.votes}}
+                daysago = {{posts.daysago}}
+                comments = {{posts.comments}}>
+            </app-post-component>
+        </div>
+        
     </div>    
    
     <div style="width:1%; display:inline-block;">
