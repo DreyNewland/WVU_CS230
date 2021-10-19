@@ -1,6 +1,7 @@
 import {Component} from "@angular/core"
-import { mock_posts1 } from "../BodyComponents/mock-posts1";
 import { Post } from "../BodyComponents/post1.model";
+import { MockPostService} from "../header/posts.service";
+
 
 @Component({
     selector: "app-layout-main",
@@ -10,9 +11,18 @@ import { Post } from "../BodyComponents/post1.model";
 export class LayoutMainComponent{
     posts1: Post [] = [];
 
-    constructor() {
-        for(var posts1 of mock_posts1){
-            this.posts1.push(new Post(posts1))
-        }
+    constructor(private infoService: MockPostService) {
+
+    }
+    ngOnInit(): void {
+        console.log('Showing data');
+        this.showUserInfo();
+    }
+
+    showUserInfo(){
+        this.infoService.getMockPost1().subscribe((data: Post[]) => {
+            console.log(data);
+            this.posts1 = data;
+        })
     }
 }

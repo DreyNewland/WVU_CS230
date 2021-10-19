@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { mock_posts2 } from 'src/app/BodyComponents/mock-posts2';
 import { Post } from 'src/app/BodyComponents/post1.model';
+import { MockPostService } from 'src/app/header/posts.service';
+
+
 
 @Component({
   selector: 'app-posts-component',
@@ -10,13 +12,19 @@ export class PostsComponent implements OnInit {
 
   posts1: Post [] = [];
 
-    constructor() {
-        for(var posts1 of mock_posts2){
-            this.posts1.push(new Post(posts1))
-        }
+    constructor(private infoService: MockPostService) {
+      
     }
 
   ngOnInit(): void {
-  }
+    console.log('Showing data');
+    this.showUserInfo();
+}
 
+showUserInfo(){
+    this.infoService.getMockPost2().subscribe((data: Post[]) => {
+        console.log(data);
+        this.posts1 = data;
+    })
+}
 }

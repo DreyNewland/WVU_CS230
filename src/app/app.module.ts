@@ -22,7 +22,6 @@ import { AwardsreceivedComponent } from './pages/awardsreceived/awardsreceived.c
 import { AwardsgivenComponent } from './pages/awardsgiven/awardsgiven.component';
 import { PostComponent } from './BodyComponents/post-component';
 import { HttpClientModule } from '@angular/common/http';
-import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +44,6 @@ import { UserInfoComponent } from './header/user-info.component';
     AwardsreceivedComponent,
     AwardsgivenComponent,
     PostComponent,
-    UserInfoComponent
   ],
   imports: [
     BrowserModule,
