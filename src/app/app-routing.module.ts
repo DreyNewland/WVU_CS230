@@ -5,6 +5,7 @@ import { LayoutMainComponent } from './layout/layout-main.component';
 import { AwardsgivenComponent } from './pages/awardsgiven/awardsgiven.component';
 import { AwardsreceivedComponent } from './pages/awardsreceived/awardsreceived.component';
 import { CommentsComponent } from './pages/comments/comments.component';
+import { CreatePostComponent } from './pages/createpost/createpost.component';
 import { DownvotedComponent } from './pages/downvoted/downvoted.component';
 import { HiddenComponent } from './pages/hidden/hidden.component';
 import { PostsComponent } from './pages/posts/posts.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'user/Dreyintor55/downvoted', component: DownvotedComponent },
   { path: 'user/Dreyintor55/gilded', component: AwardsreceivedComponent },
   { path: 'user/Dreyintor55/gilded/given', component: AwardsgivenComponent },
+  { path: 'user/Dreyintor55/createpost', component: CreatePostComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

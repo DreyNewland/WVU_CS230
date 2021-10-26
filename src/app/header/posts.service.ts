@@ -7,6 +7,8 @@ import { Post } from "../BodyComponents/post1.model";
 export class MockPostService{
     mockposts1_url: string =  "https://reddit-app-aeded-default-rtdb.firebaseio.com/mock_posts1.json";
     mockposts2_url: string =  "https://reddit-app-aeded-default-rtdb.firebaseio.com/mock_posts2.json";
+    mockposts2_init_url: string = "https://reddit-app-aeded-default-rtdb.firebaseio.com/mock_posts2/";
+
 
     constructor(private http:HttpClient){
     }
@@ -16,5 +18,10 @@ export class MockPostService{
     }
     getMockPost2() {
         return this.http.get<Post[]>(this.mockposts2_url);
+    }
+
+    addPost(data:Post, arrayLength:number){
+        return this.http.put<Post[]>(this.mockposts2_init_url + arrayLength + ".json", data);
+        
     }
 }

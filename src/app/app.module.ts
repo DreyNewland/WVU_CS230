@@ -22,6 +22,8 @@ import { AwardsreceivedComponent } from './pages/awardsreceived/awardsreceived.c
 import { AwardsgivenComponent } from './pages/awardsgiven/awardsgiven.component';
 import { PostComponent } from './BodyComponents/post-component';
 import { HttpClientModule } from '@angular/common/http';
+import { CreatePostComponent } from './pages/createpost/createpost.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,11 +46,13 @@ import { HttpClientModule } from '@angular/common/http';
     AwardsreceivedComponent,
     AwardsgivenComponent,
     PostComponent,
+    CreatePostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

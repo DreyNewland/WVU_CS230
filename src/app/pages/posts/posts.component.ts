@@ -19,6 +19,7 @@ export class PostsComponent implements OnInit {
   ngOnInit(): void {
     console.log('Showing data');
     this.showUserInfo();
+    
 }
 
 showUserInfo(){
@@ -27,4 +28,5 @@ showUserInfo(){
         this.posts1 = data;
     })
 }
+
 }
