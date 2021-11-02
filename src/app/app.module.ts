@@ -24,6 +24,8 @@ import { PostComponent } from './BodyComponents/post-component';
 import { HttpClientModule } from '@angular/common/http';
 import { CreatePostComponent } from './pages/createpost/createpost.component';
 import { FormsModule } from '@angular/forms';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig, 'reddit-app')
   ],
   providers: [],
   bootstrap: [AppComponent]

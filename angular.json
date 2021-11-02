@@ -101,6 +101,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "reddit:build:production",
+            "firebaseProject": "reddit-app-aeded",
+            "firebaseHostingSite": "reddit-app-aeded"
+          }
         }
       }
     }

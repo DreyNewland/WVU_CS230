@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseService } from 'src/app/BodyComponents/database.service';
 import { Post } from 'src/app/BodyComponents/post1.model';
 import { MockPostService } from 'src/app/header/posts.service';
 
@@ -9,7 +10,8 @@ import { MockPostService } from 'src/app/header/posts.service';
 export class CreatePostComponent implements OnInit {
   array: Post [] = [];
 
-  constructor(private infoService: MockPostService) { 
+  constructor(private infoService: MockPostService, private dbSerivce:DatabaseService) { 
+    this.dbSerivce.showData();
 
   }
 

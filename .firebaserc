@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "reddit-app-aeded": {
+      "hosting": {
+        "reddit": [
+          "reddit-app-aeded"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "reddit-app-aeded"
+  }
+}
