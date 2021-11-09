@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from './auth/auth.component';
 import { LayoutHeadersComponent } from './layout/layout-headers.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
 import { AwardsgivenComponent } from './pages/awardsgiven/awardsgiven.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'user/Dreyintor55/gilded', component: AwardsreceivedComponent },
   { path: 'user/Dreyintor55/gilded/given', component: AwardsgivenComponent },
   { path: 'user/Dreyintor55/createpost', component: CreatePostComponent },
+  { path: 'auth', component: AuthComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

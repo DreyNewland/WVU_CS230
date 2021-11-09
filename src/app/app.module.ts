@@ -26,6 +26,7 @@ import { CreatePostComponent } from './pages/createpost/createpost.component';
 import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     AwardsreceivedComponent,
     AwardsgivenComponent,
     PostComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
